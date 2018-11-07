@@ -1,0 +1,490 @@
+@font-face {
+    font-family: 'happy_monkeyregular';
+    src: url('happymonkey-regular-webfont.woff2') format('woff2'), url('happymonkey-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #aaa;
+}
+
+.contenedor {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.columna-naranja,
+.columna-rosa,
+.columna-verde {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 365px;
+    border: 3px solid #000;
+    min-height: 500px;
+    margin: 3px 0;
+    vertical-align: top;
+    background-color: #fff;
+}
+
+.columna-naranja h1,
+.columna-rosa h1,
+.columna-verde h1 {
+   margin: 10px 0 0;
+   font-size: 14px;
+   text-align: center;
+   font-family: 'happy_monkeyregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.info {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 365px;
+    border: 3px solid #000;
+    text-align: center;
+    margin: 3px 4px 3px 0;
+    vertical-align: top;
+    background-color: #fff;
+    padding: 10px;
+    word-wrap: break-word;
+    font-size: 25px;
+    font-family: 'happy_monkeyregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.boton-procesar-info,
+.boton-ingresar-info {
+    font-family: 'happy_monkeyregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    box-sizing: content-box;
+    text-align: center;
+    border: 2px solid #000;
+    max-width: 110px;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #10f3a1;
+}
+
+.boton-procesar-info:hover,
+.boton-ingresar-info:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.boton-ingresar-info {
+  top: 11px;
+  left: 4px;
+}
+
+.boton-procesar-info {
+  top: 121px;
+  left: 4px;
+}
+
+.ocultar {
+  display: none;
+}
+
+.circulo {
+    vertical-align: top;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    margin: 1px;
+}
+
+.cuadrado {
+    vertical-align: top;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    margin: 1px;
+    background-color: #000;
+}
+
+.triangulo {
+    display: inline-block;
+    background-color: transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 45px solid #000;
+    vertical-align: top;
+}
+
+.rombo {
+    display: inline-block;
+    height: 37px;
+    width: 37px;
+    margin: 8px 5px;
+    transform: rotate(45deg);
+    background-color: #000;
+}
+
+.diamante {
+    display: inline-block;
+    vertical-align: top;
+    height: 64px;
+    width: 36px;
+    position: relative;
+}
+
+.diamante .base {
+    display: block;
+    background-color: transparent;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 32px solid #000;
+    position: absolute;
+    top: 32px;
+}
+
+.diamante .tope {
+    display: block;
+    background-color: transparent;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 32px solid #000;
+    position: absolute;
+    top: 0;
+}
+
+.corazon {
+    vertical-align: top;
+    display: inline-block;
+    margin: 1px;
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+.pica {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1px;
+    height: 39px;
+    width: 39px;
+    position: relative;
+}
+
+.pica {
+    transform: rotate(180deg);
+}
+
+.corazon .lateral-uno,
+.corazon .lateral-dos {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #000;
+}
+
+.pica .lateral-uno,
+.pica .lateral-dos {
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #000;
+}
+
+.corazon .lateral-uno {
+    top: 0;
+    left: 0;
+}
+
+.pica .lateral-uno {
+    top: 0;
+    left: -2px;
+}
+
+.corazon .lateral-dos {
+    top: 0;
+    right: 0;
+}
+
+.pica .lateral-dos {
+    top: 0;
+    right: -1px;
+}
+
+.corazon .centro {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 23px;
+    left: 3px;
+    background-color: transparent;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-top: 22px solid #000;
+}
+
+.pica .centro {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    background-color: transparent;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    border-top: 20px solid #000;
+}
+
+.pica .base {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    background-color: transparent;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 12px solid #000;
+}
+
+.trebol {
+    vertical-align: top;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 4px;
+    position: relative;
+}
+
+.trebol .base {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: 4px;
+    left: 20px;
+    transform: rotate(180deg);
+    background-color: transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 33px solid #000;
+}
+
+.trebol .centro {
+    display: inline-block;
+    width: 13px;
+    height: 9px;
+    position: absolute;
+    top: 21px;
+    left: 18px;
+    background-color: #000;
+}
+
+.hoja-uno,
+.hoja-dos,
+.hoja-tres {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #000;
+}
+
+.hoja-uno {
+    top: 16px;
+    left: -2px;
+}
+
+.hoja-tres {
+    top: 16px;
+    right: -2px;
+}
+
+.hoja-dos {
+    top: 0;
+    left: 13px;
+}
+
+/* COLORES */
+
+.verde {
+    background-color: #12b500;
+}
+
+.rosa {
+    background-color: #ca0b6a;
+}
+
+.naranja {
+    background-color: #f7a200;
+}
+
+.trebol.verde,
+.pica.verde,
+.diamante.verde,
+.trebol.rosa,
+.pica.rosa,
+.diamante.rosa,
+.trebol.naranja,
+.pica.naranja,
+.diamante.naranja {
+    background-color: transparent;
+}
+
+.trebol.verde .hoja-uno,
+.trebol.verde .hoja-dos,
+.trebol.verde .hoja-tres,
+.trebol.verde .centro {
+    background-color: #12b500;
+}
+
+.trebol.rosa .hoja-uno,
+.trebol.rosa .hoja-dos,
+.trebol.rosa .hoja-tres,
+.trebol.rosa .centro {
+    background-color: #ca0b6a;
+}
+
+.trebol.naranja .hoja-uno,
+.trebol.naranja .hoja-dos,
+.trebol.naranja .hoja-tres,
+.trebol.naranja .centro {
+    background-color: #f7a200;
+}
+
+.trebol.verde .base {
+    border-top-color: #12b500;
+}
+
+.trebol.rosa .base {
+    border-top-color: #ca0b6a;
+}
+
+.trebol.naranja .base {
+    border-top-color: #f7a200;
+}
+
+.corazon.verde .centro {
+    border-top-color: #12b500;
+}
+
+.corazon.rosa .centro {
+    border-top-color: #ca0b6a;
+}
+
+.corazon.naranja .centro {
+    border-top-color: #f7a200;
+}
+
+.diamante.verde .tope {
+    border-bottom-color: #12b500;
+}
+
+.diamante.rosa .tope {
+    border-bottom-color: #ca0b6a;
+}
+
+.diamante.naranja .tope {
+    border-bottom-color: #f7a200;
+}
+
+.diamante.verde .base {
+    border-top-color: #12b500;
+}
+
+.diamante.rosa .base {
+    border-top-color: #ca0b6a;
+}
+
+.diamante.naranja .base {
+    border-top-color: #f7a200;
+}
+
+.pica.verde .base {
+    border-top-color: #12b500;
+}
+
+.pica.rosa .base {
+    border-top-color: #ca0b6a;
+}
+
+.pica.naranja .base {
+    border-top-color: #f7a200;
+}
+
+.corazon.verde .centro,
+.pica.verde .centro {
+    border-top-color: #12b500;
+}
+
+.corazon.rosa .centro,
+.pica.rosa .centro {
+    border-top-color: #ca0b6a;
+}
+
+.corazon.naranja .centro,
+.pica.naranja .centro {
+    border-top-color: #f7a200;
+}
+
+.corazon.verde,
+.corazon.rosa,
+.corazon.naranja {
+    background-color: transparent;
+}
+
+.corazon.verde .lateral-uno,
+.corazon.verde .lateral-dos {
+    background-color: #12b500;
+}
+
+.corazon.rosa .lateral-uno,
+.corazon.rosa .lateral-dos {
+    background-color: #ca0b6a;
+}
+
+.corazon.naranja .lateral-uno,
+.corazon.naranja .lateral-dos {
+    background-color: #f7a200;
+}
+
+.corazon.verde .lateral-uno,
+.corazon.verde .lateral-dos,
+.pica.verde .lateral-uno,
+.pica.verde .lateral-dos {
+    background-color: #12b500;
+}
+
+.corazon.rosa .lateral-uno,
+.corazon.rosa .lateral-dos,
+.pica.rosa .lateral-uno,
+.pica.rosa .lateral-dos {
+    background-color: #ca0b6a;
+}
+
+.corazon.naranja .lateral-uno,
+.corazon.naranja .lateral-dos,
+.pica.naranja .lateral-uno,
+.pica.naranja .lateral-dos {
+    background-color: #f7a200;
+}
+
+.triangulo.verde {
+    background-color: transparent;
+    border-bottom-color: #12b500;
+}
+
+.triangulo.rosa {
+    background-color: transparent;
+    border-bottom-color: #ca0b6a;
+}
+
+.triangulo.naranja {
+    background-color: transparent;
+    border-bottom-color: #f7a200;
+}
